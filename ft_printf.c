@@ -6,7 +6,7 @@
 /*   By: ldick <ldick@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/19 11:09:01 by ldick             #+#    #+#             */
-/*   Updated: 2024/06/09 15:44:43 by ldick            ###   ########.fr       */
+/*   Updated: 2024/06/09 15:46:37 by ldick            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,7 +44,7 @@ int	ft_printf(const char *format, ...)
 	va_start(ap, format);
 	i = 0;
 	milk = 0;
-	n = ft_strlen(format);
+	n = print_ft_strlen(format);
 	if (format == NULL)
 		return (0);
 	while (format[i] && (i < n))
