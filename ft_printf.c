@@ -6,13 +6,13 @@
 /*   By: ldick <ldick@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/19 11:09:01 by ldick             #+#    #+#             */
-/*   Updated: 2024/03/19 12:46:45 by ldick            ###   ########.fr       */
+/*   Updated: 2024/06/09 15:28:59 by ldick            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-static size_t	ft_strlen(const char *str)
+static size_t	print_ft_strlen(const char *str)
 {
 	size_t	len;
 
@@ -54,7 +54,7 @@ int	ft_printf(const char *format, ...)
 	va_start(ap, format);
 	i = 0;
 	milk = 0;
-	n = ft_strlen(format);
+	n = print_ft_strlen(format);
 	if (format == NULL)
 		return (0);
 	while (format[i] && (i < n))
