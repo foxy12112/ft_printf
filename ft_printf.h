@@ -6,7 +6,7 @@
 /*   By: ldick <ldick@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/18 10:57:00 by ldick             #+#    #+#             */
-/*   Updated: 2024/04/29 13:44:06 by ldick            ###   ########.fr       */
+/*   Updated: 2024/06/09 15:45:27 by ldick            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
 # include <stdarg.h>
 # include <stdlib.h>
 # include <unistd.h>
+# include "../libft/libft.h"
 
 void	ft_print_char(int c, int *milk);
 void	ft_print_hex_lower(unsigned int n, int *milk);

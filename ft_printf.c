@@ -6,21 +6,11 @@
 /*   By: ldick <ldick@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/19 11:09:01 by ldick             #+#    #+#             */
-/*   Updated: 2024/03/19 12:46:45 by ldick            ###   ########.fr       */
+/*   Updated: 2024/06/09 15:44:43 by ldick            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
-
-static size_t	ft_strlen(const char *str)
-{
-	size_t	len;
-
-	len = 0;
-	while (str[len] != '\0')
-		len++;
-	return (len);
-}
 
 static void	ft_check_format(va_list ap, const char *format, int *milk,
 		size_t *i)
